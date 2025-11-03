@@ -4,14 +4,13 @@ Space Travel Game
 A simple text adventure written for Python tutorials.
 """
 from text import TEXT
+from planet import planets2, Planet
 
-
-class Planet:
 def travel():
 
     print(TEXT["OPENING_MESSAGE"])
 
-    planet = "earth"
+    planet: Planet = planets2["earth"]
     engines, copilot, credits = False, False, False
     game_end = False
 
@@ -29,13 +28,14 @@ def travel():
         #
         # interaction with planets
         #
-        destinations = []
+        # destinations = []
         if planet == "earth":
             destinations = ["centauri", "sirius"]
-            print(TEXT.get("EARTH_DESCRIPTION"))
+            # print(TEXT.get("EARTH_DESCRIPTION"))
+        print(planet.description)
 
-        elif planet == "centauri":
-            print(TEXT["CENTAURI_DESCRIPTION"])
+        if planet == "centauri":
+            print(planet.description)
             destinations = ["earth", "orion"]
 
             if not engines:

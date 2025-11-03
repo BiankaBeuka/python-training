@@ -1,0 +1,32 @@
+Python classes
+
+https://www.academis.eu/advanced_python/classes/classes.html
+https://www.menti.com/ale4o5fhogmd  
+
+What is a class?
+- a collection of data structures and functions
+
+What a class is good for?
+ - to group similar data
+ - to structure data
+ 
+2 thingd about classes:
+ - data (atrributes)
+ - methods (special function inside a class)
+
+classes vs instances
+- you can make instances of a class (concrete objects of a class)
+
+Strict encapsulation doesn't exist in python
+
+special comment: 
+    """
+    A location in the space game
+    """
+
+special function (__..__) - constructor
+
+in python you don't need to write *getter* and *setter* functions
+
+what is a lifetime of a class?
+- in python we have reference counting, and if that number = 0, that's mean that there is no instance of a class
