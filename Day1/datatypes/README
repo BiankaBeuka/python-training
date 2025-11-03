@@ -1,0 +1,15 @@
+# Python Data Types
+
+## IMMUTABLE
+str
+int
+float
+bool
+tuple
+None
+
+##MUTABLE
+list
+dict
+set
+collections.Counter
