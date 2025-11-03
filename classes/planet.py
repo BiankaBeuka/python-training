@@ -20,6 +20,9 @@ class Planet:
     def __repr__(self) -> str:
         return f"Planet(name={self.name}, description={self.description})"
     
+    def __del__(self): #this is called automatically (not implementation needed)
+        print(f"Planet {self.name} is being deleted")
+
     def add_connection(self, planet):
         """adds another connection"""
         self.connections.append(planet)
