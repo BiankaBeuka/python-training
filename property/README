@@ -1,0 +1,5 @@
+
+https://www.academis.eu/advanced_python/classes/properties.html
+
+# @property - it cannot have different argument
+# @staticmethod - does not have any argument, does not depend on class or instance, it can be used to group functions inside a class
