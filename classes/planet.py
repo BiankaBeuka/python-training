@@ -44,22 +44,22 @@ planets2={
         "jupiter": Planet("Jupiter", "You are on Jupiter. Giant planet with a red spot.")
     }
 
-def __main__():
-    earth = Planet("Earth", "You are on Earth. The stars are waiting for you.")
-    centauri = Planet("Alpha Centauri", "You are on Alpha Centauri. All creatures are welcome here.")
-    sirius = Planet("Sirius", "You are on Sirius. The system is full of media companies and content delivery networks.")
-    earth1 = Planet("Earth1", "You are on Earth1. Beautiful is better than ugly.")
-    jupyter = Planet("Jupiter", "You are on Jupiter. Giant planet with a red spot.")
-    print(earth.name, earth.description)
-    print(earth)
-    # earth.show_connections()
-    other= copy(earth) #shallow copy, does not copy .connections
+# def __main__():
+#     earth = Planet("Earth", "You are on Earth. The stars are waiting for you.")
+#     centauri = Planet("Alpha Centauri", "You are on Alpha Centauri. All creatures are welcome here.")
+#     sirius = Planet("Sirius", "You are on Sirius. The system is full of media companies and content delivery networks.")
+#     earth1 = Planet("Earth1", "You are on Earth1. Beautiful is better than ugly.")
+#     jupyter = Planet("Jupiter", "You are on Jupiter. Giant planet with a red spot.")
+#     print(earth.name, earth.description)
+#     print(earth)
+#     # earth.show_connections()
+#     other= copy(earth) #shallow copy, does not copy .connections
 
-    other.name = "mars"
+#     other.name = "mars"
 
-    print(other.name, other.description)
-    print('\n')
-    other.__repr__()
+#     print(other.name, other.description)
+#     print('\n')
+#     other.__repr__()
     # earth.add_connection(centauri)
     # earth.add_connection(sirius)
     # earth.show_connections()
@@ -96,4 +96,23 @@ def __main__():
 
     # print(list(planets2.items()))
 
-__main__()
+# __main__()
+
+class UnstablePlanet(Planet):
+    """A planet that explodes after some time"""
+
+    def __init__(self, name: str, description: str, countdown: int):
+        super().__init__(name, description)
+        self.countdown = countdown
+
+    def ticker(self):
+        if self.countdown > 0:
+            self.countdown -= 1
+        else:
+            print(f"BOOOM! {self.name} exploded")
+
+unstablePlanet= UnstablePlanet("Krypton", "A planet about to explode", 3)
+unstablePlanet.ticker()
+unstablePlanet.ticker()
+unstablePlanet.ticker()
+print(unstablePlanet.name, unstablePlanet.description, unstablePlanet.countdown)

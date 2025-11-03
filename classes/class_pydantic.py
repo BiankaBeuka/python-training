@@ -63,5 +63,8 @@ print(data)
 planet3=Planet(**data) #unpacking the dictionary
 print('\nplanet3',planet3)
 
+planet2.model_dump_json() #converts to json
+print('\nplanet2 json', planet2.model_dump_json())
+
 
 
