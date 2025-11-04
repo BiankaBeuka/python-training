@@ -7,8 +7,8 @@ A simple text adventure written for Python tutorials.
 from planets import Planet, planets
 from text import TEXT
 
-
 def travel():
+    '''Main game loop'''
 
     print(TEXT["OPENING_MESSAGE"])
 
