@@ -8,6 +8,7 @@ from __future__ import annotations
 # run this file 
 # optional: implement the show_connections () method 
 
+from planets import Planet
 from text import TEXT
 from copy import copy
 

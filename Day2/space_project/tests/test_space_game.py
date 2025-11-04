@@ -1,8 +1,7 @@
 import io
 import pytest
 
-from Day2.space_game.main import travel
-
+from space_game import travel
 
 # the actual solution to the game
 SOLUTION = [
