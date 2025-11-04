@@ -4,8 +4,8 @@ Space Travel Game
 A simple text adventure written for Python tutorials.
 """
 
-from text import TEXT
 from planets import Planet, planets
+from text import TEXT
 
 
 def travel():

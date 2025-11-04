@@ -487,6 +487,7 @@ name = "space-game"
 version = "1.0.0"
 source = { editable = "." }
 dependencies = [
+    { name = "isort" },
     { name = "pydantic" },
 ]
 
@@ -505,7 +506,10 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "pydantic", specifier = ">=2.12.3" }]
+requires-dist = [
+    { name = "isort", specifier = ">=5.13.2" },
+    { name = "pydantic", specifier = ">=2.12.3" },
+]
 
 [package.metadata.requires-dev]
 dev = [

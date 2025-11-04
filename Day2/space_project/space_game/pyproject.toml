@@ -15,6 +15,7 @@ classifiers = [
 ]
 
 dependencies = [
+    "isort>=5.13.2",
     "pydantic>=2.12.3",
 ]
 
