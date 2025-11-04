@@ -29,7 +29,7 @@ def zen_text():
         yield f.read()
     print("cleaning up")
 
-def _test_long(zen_text):  # TODO: remove underscore
+def test_long(zen_text):  # TODO: remove underscore
     assert count_words(zen_text) > 100
 
 
@@ -46,5 +46,5 @@ EXAMPLES = [
     ("123 456 789", 0),
 ]
 @pytest.mark.parametrize("text,nwords", EXAMPLES)
-def _test_examples(text, nwords):  # TODO: remove underscore
+def test_examples(text, nwords):  # TODO: remove underscore
     assert count_words(text) == nwords
