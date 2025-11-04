@@ -1,0 +1,7 @@
+RECAP Day1
+
+Shallow copy vs Deep copy
+- shallow will not copy the content, will not duplicate
+
+!! you can convert almost all datatypes to string or boolean
+
