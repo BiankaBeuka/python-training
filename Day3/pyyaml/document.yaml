@@ -1,0 +1,41 @@
+# Sample YAML Document
+name: Python Training
+version: 1.0
+author: Student
+
+# Configuration settings
+settings:
+  debug: true
+  max_connections: 100
+  timeout: 30
+
+# List of modules
+modules:
+  - name: Introduction
+    duration: 2 hours
+    topics:
+      - Variables
+      - Data Types
+      - Functions
+  
+  - name: Advanced Topics
+    duration: 3 hours
+    topics:
+      - Classes
+      - Decorators
+      - Generators
+
+# Database configuration
+database:
+  host: localhost
+  port: 5432
+  username: admin
+  credentials:
+    encrypted: true
+    type: oauth
+
+# Feature flags
+features:
+  - pyyaml
+  - yaml_parsing
+  - configuration_management
